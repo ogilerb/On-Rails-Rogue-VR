@@ -7,10 +7,11 @@ public class ShootGun : MonoBehaviour
 {
 
     public GameObject partical;
+    public GameObject gun;
 
-    public void shootEffect()
+    public void shootEffect(InputAction.CallbackContext context)
     {
-        if (true)
+        if (context.performed)
         {
             partical.SetActive(false);
             partical.SetActive(true);
