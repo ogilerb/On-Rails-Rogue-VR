@@ -1012,19 +1012,7 @@ MonoBehaviour:
     m_ActionId: 39bbf1ac-21a3-413d-90f6-6dbf6efeaabe
     m_ActionName: XRI RightHand Interaction/Select Value
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2102844190}
-        m_TargetAssemblyTypeName: ShootGun, Assembly-CSharp
-        m_MethodName: shootEffect
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: 41976d89-60de-4deb-bff9-16b4af96b290
     m_ActionName: XRI RightHand Interaction/Activate
   - m_PersistentCalls:
@@ -2188,6 +2176,7 @@ GameObject:
   - component: {fileID: 1795205872}
   - component: {fileID: 1795205874}
   - component: {fileID: 1795205873}
+  - component: {fileID: 1795205875}
   m_Layer: 0
   m_Name: BOOM!
   m_TagString: Untagged
@@ -7039,6 +7028,19 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &1795205875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795205871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fe0da61898ab8e4e899af2001d948fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partical: {fileID: 1795205871}
 --- !u!1 &1857559504
 GameObject:
   m_ObjectHideFlags: 0
@@ -7286,7 +7288,19 @@ MonoBehaviour:
       m_Calls: []
   m_Activated:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1795205875}
+        m_TargetAssemblyTypeName: ShootGun, Assembly-CSharp
+        m_MethodName: shootEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
   m_Deactivated:
     m_PersistentCalls:
       m_Calls: []
@@ -7389,17 +7403,3 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4df3ce82db8e66645afd54ab1d5b0262, type: 3}
   m_PrefabInstance: {fileID: 329828422}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2102844190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2102844183}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fe0da61898ab8e4e899af2001d948fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  partical: {fileID: 1795205871}
-  gun: {fileID: 2102844183}
