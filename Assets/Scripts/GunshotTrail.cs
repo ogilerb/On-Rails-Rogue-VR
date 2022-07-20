@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class GunshotTrail : MonoBehaviour
@@ -8,6 +9,7 @@ public class GunshotTrail : MonoBehaviour
     private Vector3 endPoint;
     public float startWidth = 0.01f;
     public float endWidth = 0.01f;
+    public float delay = 0.1f;
 
     void Start()
     {
@@ -15,7 +17,7 @@ public class GunshotTrail : MonoBehaviour
         trail = this.gameObject.AddComponent<LineRenderer>();
         trail.startWidth = startWidth;
         trail.endWidth = endWidth;
-        trail.SetColors(Color.red, Color.red);
+        //trail.SetColors(Color.red, Color.red);
         
 
 
@@ -33,6 +35,15 @@ public class GunshotTrail : MonoBehaviour
 
         trail.enabled = true;
 
+        StartCoroutine(timedDelay(delay));
+
+    }
+
+    IEnumerator timedDelay(float time)
+    {
+        yield return new WaitForSeconds(time);
+
+        trail.enabled = false;
     }
 
 }
