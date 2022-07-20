@@ -3,21 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class ShootGun : MonoBehaviour
+public class GunshotEffect: MonoBehaviour
 {
 
+    //Shooting Gun Effect
     public GameObject partical;
-    public GameObject gun;
 
-    public void shootEffect(InputAction.CallbackContext context)
+    public void shootEffect()
     {
-        if (context.performed)
-        {
             partical.SetActive(false);
             partical.SetActive(true);
-        }
-
-
     }
+
+    //Raycast Collision Check
 
 }

@@ -489,7 +489,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8308779551080699818, guid: d1b6739508cfcf84abdf9c9e0b1c18f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.38
+      value: 0.3800001
       objectReference: {fileID: 0}
     - target: {fileID: 8308779551080699818, guid: d1b6739508cfcf84abdf9c9e0b1c18f2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -548,6 +548,11 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: aacaba470d7de494f9e0ed17ada553ef, type: 3}
+--- !u!4 &855438749 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8308779551080699818, guid: d1b6739508cfcf84abdf9c9e0b1c18f2, type: 3}
+  m_PrefabInstance: {fileID: 855438744}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &855438750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -626,7 +631,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 1071515245}
   m_AttachEaseInTime: 0.15
   m_MovementType: 2
   m_VelocityDamping: 1
@@ -836,6 +841,36 @@ MonoBehaviour:
     m_SingletonActionBindings: []
     m_Flags: 0
   m_HasMigratedActions: 1
+--- !u!1 &1071515244
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1071515245}
+  m_Layer: 0
+  m_Name: Shield Handle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1071515245
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071515244}
+  m_LocalRotation: {x: -0.80865127, y: -0.30504474, z: -0.4517469, w: 0.22125898}
+  m_LocalPosition: {x: 0.163, y: -0.006, z: -0.074}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 855438749}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -39.305, y: -230.332, z: 157.714}
 --- !u!1 &1119467035
 GameObject:
   m_ObjectHideFlags: 0
@@ -1012,19 +1047,7 @@ MonoBehaviour:
     m_ActionId: 39bbf1ac-21a3-413d-90f6-6dbf6efeaabe
     m_ActionName: XRI RightHand Interaction/Select Value
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2102844190}
-        m_TargetAssemblyTypeName: ShootGun, Assembly-CSharp
-        m_MethodName: shootEffect
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: 41976d89-60de-4deb-bff9-16b4af96b290
     m_ActionName: XRI RightHand Interaction/Activate
   - m_PersistentCalls:
@@ -2188,6 +2211,7 @@ GameObject:
   - component: {fileID: 1795205872}
   - component: {fileID: 1795205874}
   - component: {fileID: 1795205873}
+  - component: {fileID: 1795205875}
   m_Layer: 0
   m_Name: BOOM!
   m_TagString: Untagged
@@ -7039,6 +7063,19 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &1795205875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795205871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e676aabf3ee17b947aef3c4f6a8d112a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partical: {fileID: 1795205871}
 --- !u!1 &1857559504
 GameObject:
   m_ObjectHideFlags: 0
@@ -7052,7 +7089,6 @@ GameObject:
   - component: {fileID: 1857559506}
   - component: {fileID: 1857559505}
   - component: {fileID: 1857559512}
-  - component: {fileID: 1857559509}
   m_Layer: 0
   m_Name: ground
   m_TagString: Untagged
@@ -7069,9 +7105,9 @@ MeshCollider:
   m_GameObject: {fileID: 1857559504}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1857559506
@@ -7132,24 +7168,11 @@ Transform:
   m_GameObject: {fileID: 1857559504}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.41, z: 0}
-  m_LocalScale: {x: 10.787, y: 2, z: 6.9144}
+  m_LocalScale: {x: 10.787, y: 0.1, z: 6.9144}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1857559509
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1857559504}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10, y: 2.220446e-16, z: 9.999999}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1857559512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7286,7 +7309,31 @@ MonoBehaviour:
       m_Calls: []
   m_Activated:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1795205875}
+        m_TargetAssemblyTypeName: GunshotEffect, Assembly-CSharp
+        m_MethodName: shootEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2102844187}
+        m_TargetAssemblyTypeName: GunshotCollision, Assembly-CSharp
+        m_MethodName: gunshotCollision
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_Deactivated:
     m_PersistentCalls:
       m_Calls: []
@@ -7384,12 +7431,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -805959276040964406, guid: 4df3ce82db8e66645afd54ab1d5b0262, type: 3}
---- !u!4 &2102844189 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4df3ce82db8e66645afd54ab1d5b0262, type: 3}
-  m_PrefabInstance: {fileID: 329828422}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2102844190
+--- !u!114 &2102844187
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7398,8 +7440,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2102844183}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fe0da61898ab8e4e899af2001d948fd, type: 3}
+  m_Script: {fileID: 11500000, guid: 936edd4f72f05344da47a34a951eb9aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  partical: {fileID: 1795205871}
-  gun: {fileID: 2102844183}
+  gunObject: {fileID: 2102844183}
+  range: 20
+--- !u!4 &2102844189 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4df3ce82db8e66645afd54ab1d5b0262, type: 3}
+  m_PrefabInstance: {fileID: 329828422}
+  m_PrefabAsset: {fileID: 0}
