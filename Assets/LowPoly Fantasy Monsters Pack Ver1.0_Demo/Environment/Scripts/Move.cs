@@ -1,7 +1,10 @@
-﻿using UnityEngine;
+﻿/*
+ * using UnityEngine;
 using System.Collections;
 
 public class Move : MonoBehaviour {
+
+	/*
 
 	private float move = 20;
 	private bool stop = false;	
@@ -11,98 +14,110 @@ public class Move : MonoBehaviour {
 	public float AddWalkSpeed = 1;
 	private bool hasAniComp = false;
 
+	*//*
+
 
 	// Use this for initialization
 	void Start () 
 	{
+
+		*//*
 
 		if ( null != GetComponent<Animation>() )
 		{
 			hasAniComp = true;
 		}
 
+		*//*
+
 
 	}
 
 	void MoveActive ()
-	{ 
-		float speed =0.0f;
-		float add =0.0f;
-
-		if ( hasAniComp == true )
-		{	
-			if ( Input.GetKey(KeyCode.UpArrow) )
-			{  	
-				move *= 1.015F;
-
-				if ( move>250 && CheckAniClip( "run" )==true )
-				{
-					{
-						GetComponent<Animation>().CrossFade("run");
-						add = 20*AddRunSpeed;
-					}
-				}
-				else
-				{
-					GetComponent<Animation>().Play("walk");
-					add = 5*AddWalkSpeed;
-				}
-
-				speed = Time.deltaTime*add;
-
-				transform.Translate( 0,0,speed );
-
-			}
+	{
+		*//*
+float speed =0.0f;
+float add =0.0f;
 
 
-			if ( Input.GetKeyUp(KeyCode.UpArrow))
+if ( hasAniComp == true )
+{	
+	if ( Input.GetKey(KeyCode.UpArrow) )
+	{  	
+		move *= 1.015F;
+
+		if ( move>250 && CheckAniClip( "run" )==true )
+		{
 			{
-				if ( GetComponent<Animation>().IsPlaying("walk"))
-				{	GetComponent<Animation>().CrossFade("idle01",0.3f); }
-				if ( GetComponent<Animation>().IsPlaying("run"))
-				{	
-					GetComponent<Animation>().CrossFade("idle01",0.5f);
-					stop = true;
-				}	
-				move = 20;
-
+				GetComponent<Animation>().CrossFade("run");
+				add = 20*AddRunSpeed;
 			}
-
-			if (stop == true)
-			{	
-				float max = Time.deltaTime*20*AddRunSpeed;
-				blend = Mathf.Lerp(max,0,delay);
-
-				if ( blend > 0 )
-				{	
-					transform.Translate( 0,0,blend );
-					delay += 0.025f; 
-				}	
-				else 
-				{	
-					stop = false;
-					delay = 0.0f;
-				}
-			}
-
 		}
 		else
 		{
-			if ( Input.GetKey(KeyCode.UpArrow) )
-			{  	
-				add = 5*AddWalkSpeed;
-				speed = Time.deltaTime*add;
-				transform.Translate( 0,0,speed );
-			}
+			GetComponent<Animation>().Play("walk");
+			add = 5*AddWalkSpeed;
 		}
+
+		speed = Time.deltaTime*add;
+
+		transform.Translate( 0,0,speed );
+
+	}
+
+
+	if ( Input.GetKeyUp(KeyCode.UpArrow))
+	{
+		if ( GetComponent<Animation>().IsPlaying("walk"))
+		{	GetComponent<Animation>().CrossFade("idle01",0.3f); }
+		if ( GetComponent<Animation>().IsPlaying("run"))
+		{	
+			GetComponent<Animation>().CrossFade("idle01",0.5f);
+			stop = true;
+		}	
+		move = 20;
+
+	}
+
+	if (stop == true)
+	{	
+		float max = Time.deltaTime*20*AddRunSpeed;
+		blend = Mathf.Lerp(max,0,delay);
+
+		if ( blend > 0 )
+		{	
+			transform.Translate( 0,0,blend );
+			delay += 0.025f; 
+		}	
+		else 
+		{	
+			stop = false;
+			delay = 0.0f;
+		}
+	}
+
+}
+else
+{
+	if ( Input.GetKey(KeyCode.UpArrow) )
+	{  	
+		add = 5*AddWalkSpeed;
+		speed = Time.deltaTime*add;
+		transform.Translate( 0,0,speed );
+	}
+}
+*//*
 	}
 
 	bool CheckAniClip ( string clipname )
 	{	
+		*//*
 		if( this.GetComponent<Animation>().GetClip(clipname) == null ) 
 			return false;
 		else if ( this.GetComponent<Animation>().GetClip(clipname) != null ) 
 			return true;
+
+		*//*
 
 		return false;
 	}
@@ -110,7 +125,7 @@ public class Move : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-
+		*//*
 		MoveActive();
 
 		if ( hasAniComp == true )
@@ -205,5 +220,8 @@ public class Move : MonoBehaviour {
 			transform.Rotate(0.0f,Time.deltaTime*100.0f,0.0f);
 		}
 
-	}
-}
+		*/
+
+/*	}
+}*//*
+//*/
