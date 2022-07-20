@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 3d2d6eff17fff0b47a6c73e2fe1353ed
+=======
+guid: cb539641f5e0fa64388ead24e290d2b6
+>>>>>>> ollie-2-branch
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
