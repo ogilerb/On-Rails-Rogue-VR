@@ -4,7 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Yutaka's Scene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: fd886fb7bde00c947961cadae962ad8c, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 082c4caea2eaa4847b99b6c5f89fa05f, type: 2}
