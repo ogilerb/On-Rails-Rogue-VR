@@ -7,7 +7,7 @@ using UnityEngine.AI;
 public class WolfAI : MonoBehaviour
 {
     NavMeshAgent enemy;
-    public GameObject player;
+    GameObject player;
     float distToPlayer;
     bool playerNoticed = false;
     bool isAttacking = false;
@@ -19,6 +19,7 @@ public class WolfAI : MonoBehaviour
     void Start()
     {
         enemy = GetComponent<NavMeshAgent>();
+        player = FindObjectOfType<Player>().gameObject;
     }
 
     // Update is called once per frame
