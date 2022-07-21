@@ -345,6 +345,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wolf_02 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4158655931573319034, guid: 3675864c68d2a8f47b9a88bdf7614a19, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3675864c68d2a8f47b9a88bdf7614a19, type: 3}
 --- !u!1001 &121135277
@@ -1685,11 +1689,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &811992725 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3415498666838387452, guid: e26edb45773ba6a4a817402730e98494, type: 3}
-  m_PrefabInstance: {fileID: 1669196562}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &853006362
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2238,25 +2237,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4943916375778849974, guid: bdbbfa60d9cd113408b6cbb6ccf17841, type: 3}
   m_PrefabInstance: {fileID: 1193852060}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1198092835 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3415498665850812010, guid: e26edb45773ba6a4a817402730e98494, type: 3}
-  m_PrefabInstance: {fileID: 1669196562}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1198092838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1198092835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c5864457556b5f408c0b5326f60131d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gunObject: {fileID: 811992725}
-  range: 20
 --- !u!1001 &1366026289
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2374,6 +2354,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wolf_02 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4158655931573319034, guid: 3675864c68d2a8f47b9a88bdf7614a19, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 4158655932113001648, guid: 3675864c68d2a8f47b9a88bdf7614a19, type: 3}
       propertyPath: detectionRange
       value: 50
@@ -2435,6 +2419,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wolf_02 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4158655931573319034, guid: 3675864c68d2a8f47b9a88bdf7614a19, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3675864c68d2a8f47b9a88bdf7614a19, type: 3}
 --- !u!1001 &1420148078
@@ -2491,6 +2479,10 @@ PrefabInstance:
     - target: {fileID: 4158655931573319034, guid: 3675864c68d2a8f47b9a88bdf7614a19, type: 3}
       propertyPath: m_Name
       value: wolf_02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4158655931573319034, guid: 3675864c68d2a8f47b9a88bdf7614a19, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3675864c68d2a8f47b9a88bdf7614a19, type: 3}
@@ -2672,6 +2664,10 @@ PrefabInstance:
     - target: {fileID: 4158655931573319034, guid: 3675864c68d2a8f47b9a88bdf7614a19, type: 3}
       propertyPath: m_Name
       value: wolf_02 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4158655931573319034, guid: 3675864c68d2a8f47b9a88bdf7614a19, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3675864c68d2a8f47b9a88bdf7614a19, type: 3}
@@ -3712,6 +3708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bddd94248afdf4989cd69c7a4058ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sounds: []
 --- !u!1001 &1956405931
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3828,6 +3825,10 @@ PrefabInstance:
     - target: {fileID: 4158655931573319034, guid: 3675864c68d2a8f47b9a88bdf7614a19, type: 3}
       propertyPath: m_Name
       value: wolf_02 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4158655931573319034, guid: 3675864c68d2a8f47b9a88bdf7614a19, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3675864c68d2a8f47b9a88bdf7614a19, type: 3}
@@ -3948,6 +3949,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wolf_02 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4158655931573319034, guid: 3675864c68d2a8f47b9a88bdf7614a19, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3675864c68d2a8f47b9a88bdf7614a19, type: 3}
 --- !u!1 &2128341830 stripped
@@ -4060,6 +4065,10 @@ PrefabInstance:
     - target: {fileID: 4158655931573319034, guid: 3675864c68d2a8f47b9a88bdf7614a19, type: 3}
       propertyPath: m_Name
       value: wolf_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4158655931573319034, guid: 3675864c68d2a8f47b9a88bdf7614a19, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3675864c68d2a8f47b9a88bdf7614a19, type: 3}
