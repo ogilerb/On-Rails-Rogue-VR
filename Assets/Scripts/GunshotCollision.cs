@@ -17,7 +17,13 @@ public class GunshotCollision: MonoBehaviour
         if (Physics.Raycast(gunShotTrail, out RaycastHit hit, range))
         {
 
-            Debug.Log(hit.collider.name);
+            if(hit.collider.tag == "Enemy")
+            {
+                Debug.Log("Enemy Hit");
+            } else
+            {
+                Debug.Log("Missed");
+            }
             
         }
 

@@ -4890,6 +4890,7 @@ GameObject:
   - component: {fileID: 3821006633275227648}
   - component: {fileID: 6008641686455446998}
   - component: {fileID: 5659614841948159785}
+  - component: {fileID: -6510853280569876208}
   m_Layer: 0
   m_Name: Revolver
   m_TagString: Untagged
@@ -5033,10 +5034,34 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -6510853280569876208}
+        m_TargetAssemblyTypeName: ReturnToPlace, Assembly-CSharp
+        m_MethodName: Selec
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -6510853280569876208}
+        m_TargetAssemblyTypeName: ReturnToPlace, Assembly-CSharp
+        m_MethodName: TurnToPlace
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_Activated:
     m_PersistentCalls:
       m_Calls:
@@ -5143,6 +5168,21 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
+--- !u!114 &-6510853280569876208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6166440214134329700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6487c601e1a825d4f8baaa2d4697d1ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReturnPoint: {fileID: 0}
+  rb: {fileID: 3821006633275227648}
+  selected: 0
 --- !u!1 &6166440214321057266
 GameObject:
   m_ObjectHideFlags: 0
