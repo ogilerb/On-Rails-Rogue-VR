@@ -6,6 +6,7 @@ TagManager:
   tags:
   - MoveWithPlayer
   - Enemy
+  - Environment
   layers:
   - Default
   - TransparentFX
@@ -14,8 +15,8 @@ TagManager:
   - Water
   - UI
   - Post-Processing
-  - 
-  - 
+  - enemy
+  - object
   - 
   - 
   - 
