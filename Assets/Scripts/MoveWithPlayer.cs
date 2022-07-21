@@ -17,7 +17,7 @@ public class MoveWithPlayer : MonoBehaviour
         foreach (GameObject obj in environment)
         {
             currentPos = obj.transform.position;
-            currentPos.z += 0.05f;
+            currentPos.z += 0.1f;
             obj.transform.position = currentPos;
         }
 
