@@ -3008,6 +3008,18 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1776132041709399856, guid: e26edb45773ba6a4a817402730e98494, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1776132041709399856, guid: e26edb45773ba6a4a817402730e98494, type: 3}
+      propertyPath: m_MaxRaycastDistance
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1776132041709399858, guid: e26edb45773ba6a4a817402730e98494, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2246363636249346153, guid: e26edb45773ba6a4a817402730e98494, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -3712,6 +3724,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bddd94248afdf4989cd69c7a4058ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sounds: []
 --- !u!1001 &1956405931
 PrefabInstance:
   m_ObjectHideFlags: 0
