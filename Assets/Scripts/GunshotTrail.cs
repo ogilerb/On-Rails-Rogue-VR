@@ -19,16 +19,16 @@ public class GunshotTrail : MonoBehaviour
         trail.endWidth = endWidth;
         //trail.SetColors(Color.red, Color.red);
         
-
-
     }
 
-    public void checkTrail()
+    public void checkTrail(float dist)
     {
 
-        origin = this.transform.position + this.transform.forward * 0;
+        Debug.Log("After");
 
-        endPoint = origin + this.transform.forward * 20f;
+        origin = this.transform.position + this.transform.forward * 0f;
+
+        endPoint = origin + this.transform.forward * dist;
 
         trail.SetPosition(0, origin);
         trail.SetPosition(1, endPoint);

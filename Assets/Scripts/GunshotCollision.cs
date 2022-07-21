@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class GunshotCollision: MonoBehaviour
 {
-    public GameObject gunObject;
+    GunshotTrail trail;
     public float range = 20;
     
     
+    public void Start()
+    {
+        trail = GetComponent<GunshotTrail>();
+    }
+
     public void gunshotCollision()
     {
 
@@ -17,14 +22,19 @@ public class GunshotCollision: MonoBehaviour
         if (Physics.Raycast(gunShotTrail, out RaycastHit hit, range))
         {
 
-            if(hit.collider.tag == "Enemy")
+            trail.checkTrail(hit.distance);
+
+            if (hit.collider.tag == "Enemy")
             {
                 Debug.Log("Enemy Hit");
+
+
             } else
             {
                 Debug.Log("Missed");
+                Debug.Log(hit.collider.name);
             }
-            
+
         }
 
     }
