@@ -32108,6 +32108,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bddd94248afdf4989cd69c7a4058ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sounds:
+  - name: Theme
+    clip: {fileID: 8300000, guid: df019d1cdfc3e834282482daf20bf4e7, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
 --- !u!1001 &1925223145
 PrefabInstance:
   m_ObjectHideFlags: 0
