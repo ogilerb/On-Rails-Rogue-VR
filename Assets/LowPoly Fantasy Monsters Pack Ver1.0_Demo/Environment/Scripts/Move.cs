@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿/*using UnityEngine;
 using System.Collections;
 
 public class Move : MonoBehaviour {
@@ -207,3 +207,4 @@ public class Move : MonoBehaviour {
 
 	}
 }
+*/

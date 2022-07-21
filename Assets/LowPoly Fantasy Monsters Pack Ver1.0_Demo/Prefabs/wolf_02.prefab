@@ -1300,9 +1300,9 @@ GameObject:
   m_Component:
   - component: {fileID: 480470}
   - component: {fileID: 11180392}
+  - component: {fileID: 13580392}
   - component: {fileID: 5480392}
   - component: {fileID: 114000011980198796}
-  - component: {fileID: -5188658206014367968}
   m_Layer: 0
   m_Name: wolf_02
   m_TagString: Untagged
@@ -1318,7 +1318,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 180470}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.15, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 480468}
@@ -1349,6 +1349,19 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 1
+--- !u!135 &13580392
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180470}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 8.49
+  m_Center: {x: 0, y: 8.4, z: -0.6}
 --- !u!54 &5480392
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1363,7 +1376,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 116
+  m_Constraints: 122
   m_CollisionDetection: 0
 --- !u!114 &114000011980198796
 MonoBehaviour:
@@ -1379,20 +1392,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AddRunSpeed: 1
   AddWalkSpeed: 0.5
---- !u!136 &-5188658206014367968
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 180470}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 3
-  m_Height: 18
-  m_Direction: 2
-  m_Center: {x: 0, y: 7, z: -0.5}
 --- !u!1 &193348
 GameObject:
   m_ObjectHideFlags: 0
