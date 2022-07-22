@@ -13,6 +13,7 @@ public class GunshotEffect: MonoBehaviour
     {
             partical.SetActive(false);
             partical.SetActive(true);
+        FindObjectOfType<MusicManager>().Play("GunShot");
     }
 
     //Raycast Collision Check
