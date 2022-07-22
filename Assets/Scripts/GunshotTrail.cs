@@ -28,7 +28,7 @@ public class GunshotTrail : MonoBehaviour
     public void checkTrail(float dist)
     {
 
-        Debug.Log("After");
+        //Debug.Log("After");
 
         origin = this.transform.position + this.transform.forward * 0f;
 
