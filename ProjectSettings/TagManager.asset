@@ -6,16 +6,17 @@ TagManager:
   tags:
   - MoveWithPlayer
   - Enemy
+  - Environment
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Do not move
   - Water
   - UI
   - Post-Processing
-  - 
-  - 
+  - enemy
+  - object
   - 
   - 
   - 

@@ -5,7 +5,7 @@ using UnityEngine;
 public class GunshotCollision: MonoBehaviour
 {
     GunshotTrail trail;
-    public float range = 20;
+    public float range = 10000;
     
     
     public void Start()
@@ -26,13 +26,10 @@ public class GunshotCollision: MonoBehaviour
 
             if (hit.collider.tag == "Enemy")
             {
-                Debug.Log("Enemy Hit");
+
+                Destroy(hit.collider.gameObject);
 
 
-            } else
-            {
-                Debug.Log("Missed");
-                Debug.Log(hit.collider.name);
             }
 
         }

@@ -15,12 +15,15 @@ public class WolfAI : MonoBehaviour
     public Animator anim;
     public float detectionRange;
     public float attackRange;
+
     // Start is called before the first frame update
     void Start()
     {
         enemy = GetComponent<NavMeshAgent>();
         player = FindObjectOfType<Player>().gameObject;
     }
+
+
 
     // Update is called once per frame
     void Update()
