@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEditor;
 
 public class GunshotTrail : MonoBehaviour
 {
@@ -17,8 +18,11 @@ public class GunshotTrail : MonoBehaviour
         trail = this.gameObject.AddComponent<LineRenderer>();
         trail.startWidth = startWidth;
         trail.endWidth = endWidth;
-        //trail.SetColors(Color.red, Color.red);
-        
+        string[] materials = { "materials" };
+        trail.material = (Material) AssetDatabase.LoadAssetAtPath(AssetDatabase.GUIDToAssetPath(AssetDatabase.FindAssets("black")[0]), typeof(Material));
+        trail.startColor = Color.black;
+        trail.endColor = Color.black;
+
     }
 
     public void checkTrail(float dist)
