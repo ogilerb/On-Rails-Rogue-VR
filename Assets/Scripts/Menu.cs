@@ -8,14 +8,9 @@ public class Menu : MonoBehaviour
     bool isPaused = false;
     public GameObject menu;
 
-
-    private void Start()
-    {
-        Debug.Log("Menu Script Loaded");
-    }
     public void Paused(InputAction.CallbackContext context)
     {
-        Debug.Log("Paused!");
+        //Debug.Log("Paused!");
 
         if (context.performed)
         {
@@ -24,7 +19,7 @@ public class Menu : MonoBehaviour
                 Time.timeScale = 1;
                 menu.SetActive(false);
                 isPaused = false;
-                Debug.Log("Paused!");
+                //Debug.Log("Paused!");
             }
             else
             {
