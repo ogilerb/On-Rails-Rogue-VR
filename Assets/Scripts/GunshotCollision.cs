@@ -5,7 +5,7 @@ using UnityEngine;
 public class GunshotCollision: MonoBehaviour
 {
     GunshotTrail trail;
-    public float range = 50;
+    public float range = 10000;
     
     
     public void Start()
