@@ -44,15 +44,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: Theme
-    clip: {fileID: 8300000, guid: 582a4e6d367d0b94eb1916df38ac14a5, type: 3}
-    volume: 0.1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
   - name: GunShot
     clip: {fileID: 8300000, guid: 5ffd2b33fc42cb948b8eeaefbc1d9cd2, type: 3}
     volume: 0.1
     pitch: 1
     loop: 0
+    source: {fileID: 0}
+  - name: Theme
+    clip: {fileID: 8300000, guid: 582a4e6d367d0b94eb1916df38ac14a5, type: 3}
+    volume: 0.1
+    pitch: 1
+    loop: 1
     source: {fileID: 0}

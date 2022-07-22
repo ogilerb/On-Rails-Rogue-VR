@@ -7,14 +7,13 @@ public class GunshotEffect: MonoBehaviour
 {
 
     //Shooting Gun Effect
-    public MusicManager musicManager;
     public GameObject partical;
 
     public void shootEffect()
     {
         partical.SetActive(false);
         partical.SetActive(true);
-        musicManager.Play("GunShot");
+        FindObjectOfType<MusicManager>().Play("GunShot");
     }
 
     //Raycast Collision Check
