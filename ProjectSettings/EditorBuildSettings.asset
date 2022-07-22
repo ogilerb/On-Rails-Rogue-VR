@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/mainu.unity
+    guid: 8031bd404f90e504f9e42342de7161f5
+  - enabled: 1
     path: Assets/Scenes/Max Scene ball.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects:
