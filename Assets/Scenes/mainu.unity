@@ -723,6 +723,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1923910663, guid: ab8146aff9189bd4bb4f61d19212e180, type: 3}
+      propertyPath: sounds.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1265202007841560197, guid: ab8146aff9189bd4bb4f61d19212e180, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -770,6 +774,10 @@ PrefabInstance:
     - target: {fileID: 4936530071144782580, guid: ab8146aff9189bd4bb4f61d19212e180, type: 3}
       propertyPath: m_Name
       value: MusicManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 4936530071144782580, guid: ab8146aff9189bd4bb4f61d19212e180, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab8146aff9189bd4bb4f61d19212e180, type: 3}
