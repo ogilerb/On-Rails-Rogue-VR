@@ -10,4 +10,12 @@ public class EnemyLife : MonoBehaviour
         GameObject.Find(name).SetActive(false);
 
     }
+
+    public void FixedUpdate()
+    {
+      /*  if ()
+        {
+
+        }*/
+    }
 }
