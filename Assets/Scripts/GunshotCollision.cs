@@ -26,13 +26,10 @@ public class GunshotCollision: MonoBehaviour
 
             if (hit.collider.tag == "Enemy")
             {
-                Debug.Log("Enemy Hit");
+
+                Destroy(hit.collider.gameObject);
 
 
-            } else
-            {
-                Debug.Log("Missed");
-                Debug.Log(hit.collider.name);
             }
 
         }

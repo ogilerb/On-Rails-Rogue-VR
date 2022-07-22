@@ -1,15 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyLife : MonoBehaviour
 {
 
-    private bool isLiving = false;
 
-    // Update is called once per frame
-    void Update()
+    public void Kill(string name)
     {
-        
+        Debug.Log(name);
+        GameObject.Find(name).SetActive(false);
+
     }
 }
