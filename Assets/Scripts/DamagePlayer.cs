@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DamagePlayer : MonoBehaviour
 {
+    public int damageTaken = 3;
     HealthBar health;
 
     public void Start()
@@ -17,7 +18,7 @@ public class DamagePlayer : MonoBehaviour
         {
             //Debug.Log("wolf collision");
 
-            health.takeDamage(5);
+            health.takeDamage(3);
         }
     }
 }
