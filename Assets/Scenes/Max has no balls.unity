@@ -97,8 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: d42d4e538a3210c49ba3095e9cc8f8a4, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 20d2db02193d3a84c854799b1f9f95de, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -23455,7 +23455,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 3.5692e-41, y: 6e-44, z: 4.5905e-41, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -62260,32 +62260,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: MusicManager
       objectReference: {fileID: 0}
+    - target: {fileID: 4936530071144782580, guid: ab8146aff9189bd4bb4f61d19212e180, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab8146aff9189bd4bb4f61d19212e180, type: 3}
---- !u!1 &1923910662 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4936530071144782580, guid: ab8146aff9189bd4bb4f61d19212e180, type: 3}
-  m_PrefabInstance: {fileID: 1923910661}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1923910663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1923910662}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5bddd94248afdf4989cd69c7a4058ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sounds:
-  - name: Theme
-    clip: {fileID: 8300000, guid: 582a4e6d367d0b94eb1916df38ac14a5, type: 3}
-    volume: 0.1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
 --- !u!4 &1924286880 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4158655931572953434, guid: 3675864c68d2a8f47b9a88bdf7614a19, type: 3}
